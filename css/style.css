@@ -1,0 +1,129 @@
+md-tabs .md-tab.md-active {
+  color: black;
+  font-weight: bold;
+}
+
+p { 
+text-indent: 30px;
+  padding: 0 0 0 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 2px;
+}
+
+.card {
+  width: 22%;
+  padding: 20px;
+}
+
+.name {
+  font-size: 100px;
+  color: #E2E2E2;
+  display: inline;
+  height: 100%;
+}
+
+.shortName {
+  font-size: 60px;
+  font-weight: bold;
+  color: #E2E2E2;
+  display: block;
+  text-align: center;
+}
+
+#header {
+  padding-left: 20px;
+  background: black;
+  color: #E2E2E2;
+}
+
+#title {
+  font-size: 46px;
+  padding: 0 0 0 17px;
+  color: #E2E2E2; 
+}
+
+#aboutMe {
+  width: 700px;
+}
+
+#employerName {
+  padding: 10px;
+  font-size: 28px;
+}
+
+#jobTitle {
+  font-size: 25px;
+  display: inline-block;
+}
+
+#jobDate {
+  float: right;
+  padding-top: 13px;
+}
+
+#jobDescription {
+
+}
+
+#endorsementCard {
+  padding: 25px;
+  width: 450px; 
+}
+
+.schoolName {
+  font-size: 28px;
+}
+
+#collegeName {
+  
+}
+
+#collegeDates {
+  float: right;
+  padding-top: 13px;
+}
+
+#nanodegreeDates {
+  float: right;
+  padding-top: 13px;
+}
+
+#endorsementStatement {
+  text-indent: 30px;
+}
+
+@media only screen and (min-width: 930px) {
+  .card {
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  #title {
+    display: none;
+  }
+  .card, #aboutMe {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .name, #title {
+    display: none;
+  }
+  #header {
+    padding: 0px;
+  }
+  #jobTitle {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 371px) {
+  .shortName {
+    display: none;
+  }
+}

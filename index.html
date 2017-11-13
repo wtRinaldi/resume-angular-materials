@@ -13,11 +13,11 @@
 <div ng-app="MyApp"> 
   <md-content ng-controller='resumeController'>
     <div id="header">
-      <div class="name">{{bio.firstName}}</div>
-      <div class="name">{{bio.lastName}}</div>
-      <div class="shortName">{{bio.intro}}</div>
-      <div class="shortName">{{bio.nickName}}</div>      
-      <div id='title'>{{bio.title}}</div>
+      <div ng-bind="bio.firstName" class="name"></div>
+      <div ng-bind="bio.lastName" class="name"></div>
+      <div ng-bind="bio.intro" class="shortName"></div>
+      <div ng-bind="bio.nickName" class="shortName"></div>      
+      <div ng-bind="bio.title" id='title'></div>
       </br>
     </div>
     <md-tabs md-border-bottom="" md-dynamic-height="" md-selected="selectedTab">

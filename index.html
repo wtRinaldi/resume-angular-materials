@@ -2,39 +2,46 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <meta content='width=device-width, initial-scale=1' name='viewport'/>
-  <title>Resume - Angular Materials</title>
+  <title>William Rinaldi</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
   <link rel='stylesheet prefetch' href='https://material.angularjs.org/1.1.1/docs.css'>
   <link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css'>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 <div ng-app="MyApp"> 
-  <md-content ng-controller='resumeController'>
+  <md-content  ng-controller='resumeController'>
     <div id="header">
-      <div ng-bind="bio.firstName" class="name"></div>
-      <div ng-bind="bio.lastName" class="name"></div>
-      <div ng-bind="bio.intro" class="shortName"></div>
-      <div ng-bind="bio.nickName" class="shortName"></div>      
-      <div ng-bind="bio.title" id='title'></div>
+      <div class="center">
+        <span ng-bind="bio.firstName" class="name"></span>
+        <span ng-bind="bio.lastName" class="name"></span>
+      </div>
+      <div class="center">
+        <div ng-bind="bio.intro" class="shortName"></div>
+        <div ng-bind="bio.nickName" class="shortName"></div>
+      </div>
+      <div class="center" ng-bind="bio.title" id='title'></div>
       </br>
     </div>
-    <md-tabs md-border-bottom="" md-dynamic-height="" md-selected="selectedTab">
+    <md-tabs md-center-tabs="true" md-border-bottom="" md-dynamic-height="" md-selected="selectedTab">
       <md-tab label="About Me">
-        <md-content id="aboutMe">      
-          <p ng-repeat="paragraph in bio.myStory">{{paragraph}}</p>                
+        <md-content>
+          <md-card class="card">
+            <div>
+              <p ng-repeat="paragraph in bio.myStory">{{paragraph}}</p>
+            </div>
+          </md-card>
         </md-content>
       </md-tab>
       <md-tab label="Experience">
         <md-content class="md-padding" >
-          <h1 class="tabTitle">Front End Experience</h1>
               <div>
                 <md-card class="card" ng-repeat='job in jobs'>
                   <div>
-                    <span class="md-headline">{{job.employer}}</span>
-                    <span id="jobTitle">{{job.title}}</span>
-                    <span id="jobDate">{{job.dates}}</span>                    
+                    <span class="cardTitle">{{job.employer}}</span>
+                    <span class="cardTitle">{{job.title}}</span>
+                    <span class="dates">{{job.dates}}</span>                    
                   </div>
                   </br>
                     <ul id="jobDescription" ng-repeat="item in job.description">
@@ -55,18 +62,18 @@
                 </md-input-container>
                 <md-card class="card">
                   <div>
-                    <span class="md-headline" id="collegeName">{{education.college.name}}</span>
-                    <span class="collegeDates" id="collegeDates">{{education.college.dates}}</span>
+                    <span class="cardTitle">{{education.college.name}}</span>
+                    <span class="dates">{{education.college.dates}}</span>
                   </div>
                   <div>
-                    <span class="md-subhead">{{education.college.degree}}</span>
+                    <span class="cardTitle">{{education.college.degree}}</span>
                     <span>{{education.college.major}}</span><br>
                   </div>
                 </md-card>
                 <md-card class="card" ng-repeat="nanodegree in education.nanodegrees">
                   <div>
-                    <span class="md-headline" id="nanodegreeTitle"> {{nanodegree.school + nanodegree.title}} </span>
-                    <span id="nanodegreeDates">{{nanodegree.dates}}</span><br>
+                    <span class="cardTitle"> {{nanodegree.school + nanodegree.title}} </span>
+                    <span class="dates">{{nanodegree.dates}}</span><br>
                   </div>
                     <ul ng-repeat="item in nanodegree.courses">
                       <li>{{item}}</li>
@@ -80,7 +87,7 @@
       <md-tab label="Endorsements">
         <md-content class="md-padding">        
             <div>
-                <md-card id="endorsementCard" ng-repeat='endorsement in endorsements'>
+                <md-card class="card" id="endorsementCard" ng-repeat='endorsement in endorsements'>
                   <span id="endorsementStatement"> {{endorsement.statement}} </span><br>
                   <span id="endorserName">{{endorsement.endorser}}</span><br>
                 </md-card>
@@ -88,7 +95,8 @@
         </md-content>
       </md-tab>
       <md-tab label="Contact">
-        <md-content class="md-padding">                  
+        <md-content class="md-padding">
+          <md-card class="card">
             <div>
                   <span class="md-subhead" id="itemHeadline">Email: {{bio.contacts.email}}</span></br>
                   <span class="md-subhead"  id="itemDescription">Mobile: {{bio.contacts.mobile}}</span></br>
@@ -98,6 +106,7 @@
             <a href="https://github.com/wtRinaldi" class="md-subhead">GitHub</a></br>
             <a href="https://www.linkedin.com/in/wtrinaldi/" class="md-subhead">LinkedIn</a>
           </div>
+          </md-card>
         </md-content>
       </md-tab>
     </md-tabs>

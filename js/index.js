@@ -114,7 +114,7 @@ app.controller('resumeController', function($scope) {
             endorser: " - Allie Wentzel, Vanguard application developer"
         }, {
             statement: '"I had the pleasure of working with William for over a year. During that time William was a UI developer on my team. We worked specifically with angular/JS on the front end for Vanguard personal advisor services webpages. William displayed great initiative and was able to follow instructions concisely. He was always available and while I was training him, William was very excited and eager to learn about Vanguard\'s systems and software design. William completed his tasks on time and was not afraid to ask questions if he was stuck on a particular problem. We did a lot of pair programming and William would volunteer his efforts when discussing implementation of the solutions. I was very glad to have William as a part of my team which consisted of 3-4 developers. William is a team player and gets along with everyone. He is very determined on finding a solution when assigned work. I noticed that he pays attention to detail and this was very important when working with JavaScript and angular. Best of all, William has shared a similar characteristic with me and that is he does not give up until all requirements have been met.  I highly recommend William for any front end developer to role. I have no doubts that your clients will be satisfied with his results. Please feel free to contact me at 215-694-9671 if there are additional questions."',
-            endorser: "Salim Elayan, Senior Vanguard Application Developer"
+            endorser: " - Salim Elayan, Senior Vanguard Application Developer"
         }
 ];
 

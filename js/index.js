@@ -33,12 +33,12 @@ app.controller('resumeController', function($scope) {
             name: 'Pennsylvania State University',
             degree: 'B.Sc. - ',
             major: 'Information Science and Technology with option in Integration and Application',
-            dates: '2011 - 2016',
+            dates: '2016',
         },
         nanodegrees: [{
                 title: 'Front-End Web Development',
                 school: 'Udacity - ',
-                dates: '2015 - 2016',
+                dates: '2016',
                 URL: 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001',
                 description: '6 months',
                 courses: [
@@ -76,7 +76,7 @@ app.controller('resumeController', function($scope) {
             {
                 title: 'Android Basics',
                 school: 'Udacity - ',
-                dates: '2015 - 2016',
+                dates: '2017',
                 URL: 'https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803',
                 courses: [
         'Android User Interface',

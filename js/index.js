@@ -111,10 +111,10 @@ app.controller('resumeController', function($scope) {
     };
     $scope.endorsements = [{
             statement: '"I had the great opportunity to be William Rinaldi’s teammate at Vanguard over the past year.  Throughout this time, he always demonstrated a great willingness to learn and constantly strive to improve when possible.  He has a great work ethic, always going out of his way to try to improve a design or make the best option available work.  He is adaptable and was able to step into key roles when other team members were absent.  On our team, William really molded himself a key role as a very important UI developer with his AngularJS skills.  His problem solving skills made him an invaluable asset to our team in the UI space.  William is always willing to help someone when they need his help and never afraid to share his ideas with his teammates.  In addition to this, he brings a lighthearted, fun atmosphere to work and really cares about his teammates."',
-            endorser: " - Allie Wentzel, Vanguard application developer"
+            endorser: " - Allie Wentzel - Vanguard Application Developer"
         }, {
             statement: '"I had the pleasure of working with William for over a year. During that time William was a UI developer on my team. We worked specifically with angular/JS on the front end for Vanguard personal advisor services webpages. William displayed great initiative and was able to follow instructions concisely. He was always available and while I was training him, William was very excited and eager to learn about Vanguard\'s systems and software design. William completed his tasks on time and was not afraid to ask questions if he was stuck on a particular problem. We did a lot of pair programming and William would volunteer his efforts when discussing implementation of the solutions. I was very glad to have William as a part of my team which consisted of 3-4 developers. William is a team player and gets along with everyone. He is very determined on finding a solution when assigned work. I noticed that he pays attention to detail and this was very important when working with JavaScript and angular. Best of all, William has shared a similar characteristic with me and that is he does not give up until all requirements have been met.  I highly recommend William for any front end developer to role. I have no doubts that your clients will be satisfied with his results. Please feel free to contact me at 215-694-9671 if there are additional questions."',
-            endorser: " - Salim Elayan, Senior Vanguard Application Developer"
+            endorser: " - Salim Elayan - Senior Vanguard Application Developer"
         }
 ];
 
@@ -124,7 +124,6 @@ app.controller('resumeController', function($scope) {
         nickName: 'Will',
         intro: 'i am ',
         title: 'Front End Developer',
-        greeting: 'Greetings!',
         myStory: ["",
               "For the last year and 4 months I have been a full-time employee for LiquidHub and contracted as a UI and Mid-Tier software application developer for The Vanguard Group in Malvern, PA.  During my time at Vanguard, I worked on an agile team to help develop complex client facing and internal software applications.  Here I brought my passion for UI and was able to quickly learn AngularJS to become the go-to UI developer for multi-team projects.",
 

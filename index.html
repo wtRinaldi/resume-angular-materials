@@ -2,14 +2,19 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>William Rinaldi</title>
+  <title>Resume - Angular Materials</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+  
   <link rel='stylesheet prefetch' href='https://material.angularjs.org/1.1.1/docs.css'>
-  <link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css'>
-  <link rel="stylesheet" href="css/style.css">
+<link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
 
 <body>
+  
 <div ng-app="MyApp"> 
   <md-content  ng-controller='resumeController'>
     <div id="header">
@@ -37,7 +42,7 @@
       <md-tab label="Experience">
         <md-content class="md-padding" >
               <div>
-                <md-card class="card" ng-repeat='job in jobs'>
+                <md-card class="jobCard" ng-repeat='job in jobs'>
                   <div>
                     <span class="cardTitle">{{job.employer}}</span>
                     <span class="cardTitle">{{job.title}}</span>
@@ -87,9 +92,18 @@
       <md-tab label="Endorsements">
         <md-content class="md-padding">        
             <div>
-                <md-card class="card" id="endorsementCard" ng-repeat='endorsement in endorsements'>
-                  <span id="endorsementStatement"> {{endorsement.statement}} </span><br>
+                <md-card class="card" ng-repeat="endorsement in endorsements">
+                  <span id="endorsementStatement">{{endorsement.statement}}</span><br>
                   <span id="endorserName">{{endorsement.endorser}}</span><br>
+                </md-card>
+                
+                  
+                
+                <md-card class="card">
+                  <span class="md-subhead">Project review feedback from students</span></br>
+                  <ul ng-repeat="feedback in reviewFeedback">
+                    <li>{{feedback}}</li></br>
+                  </ul>
                 </md-card>
             </div>         
         </md-content>

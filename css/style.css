@@ -23,6 +23,12 @@ ul {
   margin: 10px auto 0px auto;
 }
 
+.jobCard {
+  width: 900px;
+  padding: 25px;
+  margin: 10px auto 0px auto;
+}
+
 .name {
   font-size: 100px;
   color: #E2E2E2;
@@ -67,11 +73,6 @@ ul {
   text-indent: 30px;
 }
 
-@media only screen and (min-width: 930px) {
-  .card {
-    width: 900px;
-  }
-}
 
 @media only screen and (max-width: 920px) {
   #title {

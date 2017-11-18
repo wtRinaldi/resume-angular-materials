@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <meta charset="UTF-8">
   <title>Resume - Angular Materials</title>
+  <meta charset="UTF-8">  
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
-  
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel='stylesheet prefetch' href='https://material.angularjs.org/1.1.1/docs.css'>
-<link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css'>
+  <link rel="stylesheet" href="css/style.css">  
 </head>
-
 <body>
-  
 <div ng-app="MyApp"> 
   <md-content  ng-controller='resumeController'>
     <div id="header">
@@ -82,10 +78,8 @@
                   </div>
                     <ul ng-repeat="item in nanodegree.courses">
                       <li>{{item}}</li>
-                    </ul>
-                      
-                </md-card>
-                  
+                    </ul>                      
+                </md-card>                 
               </div>          
         </md-content>
       </md-tab>
@@ -95,10 +89,7 @@
                 <md-card class="card" ng-repeat="endorsement in endorsements">
                   <span id="endorsementStatement">{{endorsement.statement}}</span><br>
                   <span id="endorserName">{{endorsement.endorser}}</span><br>
-                </md-card>
-                
-                  
-                
+                </md-card>                
                 <md-card class="card">
                   <span class="md-subhead">Project review feedback from students</span></br>
                   <ul ng-repeat="feedback in reviewFeedback">
@@ -126,15 +117,14 @@
     </md-tabs>
   </md-content>
 </div>
-  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
 <script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.js'></script>
-
-    <script  src="js/index.js"></script>
+<script  src="js/index.js"></script>
 
 </body>
 </html>

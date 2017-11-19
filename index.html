@@ -41,7 +41,7 @@
                     <span class="cardTitle">{{job.title}}</span>
                     <span class="dates">{{job.dates}}</span>                    
                   </div>
-                  </br>
+                  <md-divider/></br>
                     <ul id="jobDescription" ng-repeat="item in job.description">
                       <li>{{item}}</li>
                     </ul>
@@ -63,6 +63,7 @@
                     <span class="cardTitle">{{education.college.name}}</span>
                     <span class="dates">{{education.college.dates}}</span>
                   </div>
+                  <md-divider/></br>
                   <div>
                     <span class="cardTitle">{{education.college.degree}}</span>
                     <span>{{education.college.major}}</span><br>
@@ -73,12 +74,11 @@
                     <span class="cardTitle"> {{nanodegree.school + nanodegree.title}} </span>
                     <span class="dates">{{nanodegree.dates}}</span><br>
                   </div>
+                  <md-divider/></br>
                     <ul ng-repeat="item in nanodegree.courses">
                       <li>{{item}}</li>
-                    </ul>
-                      
-                </md-card>
-                  
+                    </ul>                     
+                </md-card>                  
               </div>          
         </md-content>
       </md-tab>
@@ -90,7 +90,7 @@
                   <span id="endorserName">{{endorsement.endorser}}</span><br>
                 </md-card>
                 <md-card class="card">               
-                  <span class="cardTitle">Project review feedback from students</span></br>
+                  <span class="cardTitle">Udacity project review feedback</span>
                   <ul ng-repeat="feedback in reviewFeedback">
                     <md-divider/></br>
                     <li>{{feedback}}</li></br>

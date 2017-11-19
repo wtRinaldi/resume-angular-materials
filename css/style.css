@@ -24,18 +24,6 @@ ul {
   text-align: center;
 }
 
-.card {
-  width: 700px;
-  padding: 15px;
-  margin: 10px auto 0px auto;
-}
-
-.jobCard {
-  width: 900px;
-  padding: 15px;
-  margin: 10px auto 0px auto;
-}
-
 .name {
   font-size: 90px;
   color: #E2E2E2;
@@ -44,20 +32,33 @@ ul {
   font-weight: lighter;
 }
 
-#header {
-  background: #00bcd4;
-  color: #E2E2E2;
-}
-
 #title {
   font-size: 30px;
   color: #E2E2E2;
   font-weight: lighter;
 }
 
+#header {
+  background: #00bcd4;
+  color: #E2E2E2;
+}
+
+.card {
+  width: 700px;
+  padding: 15px;
+  margin: 10px auto 0px auto;
+}
+
 .cardTitle {
   font-size: 18px;
   display: inline-block;
+  padding: 9px 0 0 0;
+}
+
+.jobCard {
+  width: 900px;
+  padding: 15px;
+  margin: 10px auto 0px auto;
 }
 
 .dates {

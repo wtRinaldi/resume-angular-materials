@@ -13,7 +13,6 @@ a {
 
 p { 
   text-indent: 30px;
-  padding: 0 0 0 30px;
 }
 
 ul {
@@ -27,30 +26,22 @@ ul {
 
 .card {
   width: 700px;
-  padding: 25px;
+  padding: 15px;
   margin: 10px auto 0px auto;
 }
 
 .jobCard {
   width: 900px;
-  padding: 25px;
+  padding: 15px;
   margin: 10px auto 0px auto;
 }
 
 .name {
-  font-size: 100px;
+  font-size: 90px;
   color: #E2E2E2;
   display: inline;
   height: 100%;
-  
-}
-
-.shortName {
-  font-size: 60px;
-  font-weight: bold;
-  color: #E2E2E2;
-  display: block;
-  text-align: center;
+  font-weight: lighter;
 }
 
 #header {
@@ -59,17 +50,14 @@ ul {
 }
 
 #title {
-  font-size: 46px;
-  color: #E2E2E2; 
+  font-size: 30px;
+  color: #E2E2E2;
+  font-weight: lighter;
 }
 
 .cardTitle {
-  font-size: 25px;
+  font-size: 18px;
   display: inline-block;
-}
-
-.schoolName {
-  font-size: 28px;
 }
 
 .dates {
@@ -77,34 +65,14 @@ ul {
   padding: 11px 0 0 0;
 }
 
-#endorsementStatement {
-  text-indent: 30px;
-}
-
-
 @media only screen and (max-width: 920px) {
   #title {
     display: none;
   }
-  .card, #aboutMe {
+  .card, .jobCard, #aboutMe {
     width: 95%;
   }
-}
-
-@media only screen and (max-width: 370px) {
-  .name, #title {
-    display: none;
-  }
-  #header {
-    padding: 0px;
-  }
-  #jobTitle {
-    padding-left: 10px;
-  }
-}
-
-@media only screen and (min-width: 371px) {
-  .shortName {
-    display: none;
+  .name {
+    font-size: 50px;
   }
 }

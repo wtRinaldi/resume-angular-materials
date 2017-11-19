@@ -89,9 +89,10 @@
                   <p id="endorsementStatement">{{endorsement.statement}}</p><br>
                   <span id="endorserName">{{endorsement.endorser}}</span><br>
                 </md-card>
-                <md-card class="card">
-                  <span class="md-subhead">Project review feedback from students</span></br>
+                <md-card class="card">               
+                  <span class="cardTitle">Project review feedback from students</span></br>
                   <ul ng-repeat="feedback in reviewFeedback">
+                    <md-divider/></br>
                     <li>{{feedback}}</li></br>
                   </ul>
                 </md-card>

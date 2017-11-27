@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html >
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>William Rinaldi Resume</title>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  <title>Resume - Angular Materials</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
   <link rel='stylesheet prefetch' href='https://material.angularjs.org/1.1.1/docs.css'>
   <link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css'>
@@ -10,7 +11,6 @@
 </head>
 
 <body>
-<meta content='width=device-width, initial-scale=1' name='viewport'/>
 <div ng-app="MyApp"> 
   <md-content  ng-controller='resumeController'>
     <div id="header">
@@ -21,7 +21,7 @@
       <div class="center" ng-bind="bio.title" id='title'></div>
       </br>
     </div>
-    <md-tabs md-center-tabs="true" md-border-bottom="" md-dynamic-height="" md-selected="selectedTab">
+    <md-tabs md-center-tabs="true" md-dynamic-height="" md-selected="selectedTab">
       <md-tab label="About Me">
         <md-content>
           <md-card class="card">
@@ -38,7 +38,7 @@
                   <div>
                     <span class="cardTitle">{{job.employer}}</span>
                     <span class="cardTitle">{{job.title}}</span>
-                    <span class="dates">{{job.dates}}</span>                    
+                    <span class="dates">{{job.dates}}</span>
                   </div>
                   <md-divider/></br>
                     <ul id="jobDescription" ng-repeat="item in job.description">
@@ -64,7 +64,7 @@
                   </div>
                   <md-divider/></br>
                   <div>
-                    <span class="cardTitle">{{education.college.degree}}</span>
+                    <span>{{education.college.degree}}</span>
                     <span>{{education.college.major}}</span><br>
                   </div>
                 </md-card>
@@ -76,8 +76,10 @@
                   <md-divider/></br>
                     <ul ng-repeat="item in nanodegree.courses">
                       <li>{{item}}</li>
-                    </ul>                     
-                </md-card>                  
+                    </ul>
+                      
+                </md-card>
+                  
               </div>          
         </md-content>
       </md-tab>
@@ -88,7 +90,7 @@
                   <p id="endorsementStatement">{{endorsement.statement}}</p><br>
                   <span id="endorserName">{{endorsement.endorser}}</span><br>
                 </md-card>
-                <md-card class="card">               
+                <md-card class="card">                
                   <span class="cardTitle">Udacity project review feedback</span>
                   <ul ng-repeat="feedback in reviewFeedback">
                     <md-divider/></br>
@@ -123,7 +125,7 @@
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
 <script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.js'></script>
-    <script  src="js/index.js"></script>
+<script  src="js/index.js"></script>
 
 </body>
 </html>
